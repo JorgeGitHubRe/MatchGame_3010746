@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatchGame_3010746.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+         Spacing="50"
+         Padding="35,0"
+         VerticalOptions="Center"
+         Background="black">
+
+            <Label Text="Match Game Indel" x:Name="lblPrincipal" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Start" TextColor="MediumBlue" FontAttributes="Bold" TextTransform="Uppercase" />
+            <Button Text="Empezar Juego" x:Name="btniniciar" Clicked="btniniciar_Clicked"  FontAttributes="Bold" Background="white"  BorderWidth="3" TextColor="MediumBlue"/>
+            <Button Text="Reiniciar Juego" x:Name="btnreinicar" Clicked="btnreinicar_Clicked"  FontAttributes="Bold" Background="white"  BorderWidth="3" TextColor="MediumBlue"/>
+            <Label Text="Tiempo: 0 s" x:Name="lblTem" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="Juego Completado  en: " x:Name="lblCom" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <Grid x:Name="Grid1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Text="?" FontSize="30" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Column="1" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Column="2" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Column="3" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+
+                <Button Text="?" FontSize="30" Grid.Row="1" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3" />
+                <Button Text="?" FontSize="30" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Row="1" Grid.Column="3" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+
+                <Button Text="?" FontSize="30" Grid.Row="2" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3" />
+                <Button Text="?" FontSize="30" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Row="2" Grid.Column="3" Clicked="Button_Clicked" BorderColor="MediumBlue" BorderWidth="3"/>
+
+                <Button Text="?" FontSize="30" Grid.Row="3" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3"/> 
+                <Button Text="?" FontSize="30" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3"/>
+                <Button Text="?" FontSize="30" Grid.Row="3" Grid.Column="3" Clicked="Button_Clicked"  BorderColor="MediumBlue" BorderWidth="3"/>
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
